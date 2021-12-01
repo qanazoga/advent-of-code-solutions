@@ -1,6 +1,8 @@
 # My solutions to Advent of Code 
 (starting in 2021, working backwards whenever I have time)
 
+Working in Clojure because it's my current obsession and I figured this would help me learn better.
+
 <hr>
 
 [advent.core](./src/advent/core.clj) is a quick script I threw together to allow future me, or others, to view answers to each problem quickly.  
@@ -18,4 +20,4 @@ Years:
 - 2018
 - 2019
 - 2020
-- 2021
+- [2021](./src/advent/2021/)
