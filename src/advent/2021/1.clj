@@ -12,17 +12,16 @@
                i)
              (first input)))))
 
-(defn- third [input] (-> input rest second))
-
 (defn part-two [input]
   (loop [input input
          i 0
-         p (+ (first input) (second input) (third input))]
+         p (apply + (take 3 input))]
     
     (if (> 3 (count input))
       i
       (recur (rest input)
-             (if (< p (+ (first input) (second input) (third input)))
+             (if (< p (apply + (take 3 input)))
                (inc i)
                i)
-             (+ (first input) (second input) (third input))))))
+             (apply + (take 3 input))))))
+
